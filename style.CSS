@@ -1,0 +1,812 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(30, 30, 30);
+}
+
+.full-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'section-1'
+    'section-2'
+    'section-3'
+    'section-4'
+    'section-5'
+    'section-6'
+    'section-7'
+    'section-8'
+    ;
+}
+
+/* .section-1 */
+
+.full-page .section-1 {
+    grid-area: section-1;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'head head'
+    'content content'
+    ;
+    background-image:linear-gradient(to bottom, transparent, rgba(30, 30, 30)), url(img/front.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* head */
+.full-page .head {
+    grid-area: head;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    margin-left: 50px;
+    width: 35px;
+    height: 35px;
+    background-image: url(img/logo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.full-page .head ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0 50px 0 110px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.full-page .head ul li {
+    margin: 5px 5px;
+    font-size: 10px;
+    text-align: center;
+    list-style-position: inside;
+    font-style: Cormorant SC;
+}
+
+#reservation {
+    background-color: transparent;
+    color: rgba(245, 190, 50, 1);
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+
+/* content */
+.full-page .content {
+    grid-area: content;
+    justify-self: center;
+    margin: 0 50px 0 50px;
+}
+
+.content .text {
+    text-align: center;
+}
+
+.content .p1 {
+    font-family: Great Vibes;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content h1 {
+    font-size: 34px;
+    color: rgba(245, 190, 50, 1);
+}
+
+.content .p2 {
+    margin: 5px 90px;
+    font-family: Great Vibes;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#to-menu {
+    background-color: rgba(245, 190, 50, 1);
+    color: rgba(30, 30, 30);
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+/* .section-2 */
+
+.full-page .section-2 {
+    grid-area: section-2;
+    background-color: rgba(30, 30, 30);
+    width: 80vw;
+    height: 140vh;
+    display: grid;
+    margin: 0 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40vh 40vh 10vh;
+    grid-template-areas: 
+    "s2-1 s2-1 s2-1"
+    "s2-2 s2-3 s2-4"
+    "s2-5 s2-6 s2-7";
+}
+
+.section-2 .s2-1 {
+    grid-area: s2-1;
+    height: 40vh;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.s2-1 .s2-p1 {
+    font-family: Great Vibes;
+    font-size: 8px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.s2-1 h3 {
+    font-size: 16px;
+    color: rgba(245, 190, 50, 1);
+}
+
+.s2-1 .s2-p2 {
+    margin: 5px 90px;
+    font-family: Great Vibes;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-2 .s2-2 {
+    grid-area: s2-2;
+    background-image: url(img/sushi3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    
+}
+.section-2 .s2-3 {
+    grid-area: s2-3;
+    background-image: url(img/sushi6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+.section-2 .s2-4 {
+    grid-area: s2-4;
+    background-image: url(img/sushi9.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+.section-2 .s2-5 {
+    grid-area: s2-5;
+    background-color: rgba(30, 30, 30);
+}
+.section-2 h3 {
+    font-size: 16px;
+    color: rgba(245, 190, 50, 1);
+}
+.section-2 p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 3px 0 0;
+}
+
+.section-2 .s2-6 {
+    grid-area: s2-6;
+    background-color: rgba(30, 30, 30);
+    margin-bottom: 30px;
+}
+.section-2 .s2-7 {
+    grid-area: s2-7;
+    background-color: rgba(30, 30, 30);
+}
+
+
+
+.section-2 .order {
+    background-color: transparent;
+    color: rgba(245, 190, 50, 1);
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+
+/* section 3 */
+
+.full-page .section-3 {
+    grid-area: section-3;
+    background-color: rgba(30, 30, 30);
+    width: 100vw;
+    height: 110vh;
+    display: grid;
+    grid-template-rows: 20vh 80vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "head-3 head-3"
+    "content-3 content-3"
+    ;
+    
+}
+
+.section-3 .head-3 {
+    grid-area: head-3;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(img/underSec2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-3 .content-3 {
+    grid-area: content-3;
+    margin: 50vh 0 0 0;
+    width: 100%;
+    height: 50vh;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.content-3 .s3-p1 {
+    font-family: Great Vibes;
+    font-size: 8px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-3 h2 {
+    font-size: 16px;
+    color: rgba(245, 190, 50, 1);
+}
+
+.content-3 .s3-p2 {
+    margin: 5px 90px;
+    font-family: Great Vibes;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.section-3 .btn3-hold {
+    margin: 10px 30px 40px 30px;
+}
+
+.section-3 .s3-btn1 {
+    background-color: rgba(245, 190, 50, 1);
+    color: rgba(30, 30, 30);
+    font-size: 8px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.section-3 .s3-btn {
+    background-color: transparent;
+    color: rgba(245, 190, 50, 1);
+    font-size: 8px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* section 4 */
+
+.full-page .section-4 {
+    grid-area: section-4;
+    background-color: rgba(30, 30, 30);
+    width: 100vw;
+    height: 230vh;
+    display: grid;
+    grid-template-rows: 60vh 60vh 60vh 40vh;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "content-4-1 content-4-2"
+    "content-4-3 content-4-4"
+    "content-4-5 content-4-6"
+    "content-4-7 content-4-7"
+    ;
+}
+
+.section-4 h3 {
+    font-size: 16px;
+    color: rgba(245, 190, 50, 1);
+}
+
+.section-4 p {
+    font-size: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-4 .content4-1 {
+    grid-area: content-4-1;
+    width: 100%;
+    height: 60vh;
+    background-image: url(img/sushi10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 90px;
+}
+
+.section-4 .content4-2 {
+    grid-area: content-4-2;   
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+}
+.section-4 .content4-3 {
+    grid-area: content-4-3;
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+}
+.section-4 .content4-4 {
+    grid-area: content-4-4;
+    width: 100%;
+    height: 60vh;
+    background-image: url(img/sushi12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 90px;
+}
+.section-4 .content4-5 {
+    grid-area: content-4-5;
+    width: 100%;
+    height: 60vh;
+    background-image: url(img/sushi11.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 90px;
+}
+.section-4 .content4-6 {
+    grid-area: content-4-6;
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+}
+
+.section-4 .content4-7 {
+    grid-area: content-4-7;
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+    text-align: center;
+}
+
+.content4-7 .s4-p1 {
+    font-family: Great Vibes;
+    font-size: 8px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content4-7 h3 {
+    font-size: 16px;
+    color: rgba(245, 190, 50, 1);
+}
+
+.content4-7 .s4-p2 {
+    margin: 5px 90px;
+    font-family: Great Vibes;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.section-4 .btn4-hold {
+    margin: 10px 30px 40px 30px;
+}
+
+.section-4 .private {
+    background-color: rgba(245, 190, 50, 1);
+    color: rgba(30, 30, 30);
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.section-4 .coorporate {
+    background-color: transparent;
+    color: rgba(245, 190, 50, 1);
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+
+
+/* section 5 */
+
+.full-page .section-5 {
+    grid-area: section-5;
+    height: 200vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60vh 60vh 60vh;
+    grid-template-columns: 250px 250px;
+    grid-template-areas: 
+    "content-5-1 content-5-2"
+    "content-5-3 content-5-4"
+    "content-5-5 content-5-6"
+    ;
+}
+
+.section-5 .content5-1 {
+    grid-area: content-5-1;   
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+}
+.section-5 .content5-2 {
+    grid-area: content-5-2;
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(to left, transparent, rgba(30, 30, 30)), url(img/finedining2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 90px;
+    display: flex;
+}
+.section-5 .content5-3 {
+    grid-area: content-5-3;
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(to right, transparent, rgba(30, 30, 30)), url(img/finedining.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+}
+.section-5 .content5-4 {
+    grid-area: content-5-4;
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+}
+.section-5 .content5-5 {
+    grid-area: content-5-5;
+    color: rgba(255, 255, 255, 1);
+    margin: 30px 30px 20px 60px;
+}
+.section-5 .content5-6 {
+    grid-area: content-5-6;
+    width: 100%;
+    height: 60vh;
+    background-image:linear-gradient(to left, transparent, rgba(30, 30, 30)), url(img/luxurybg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 90px;
+}
+
+.section-5 h4 {
+    color: rgba(245, 190, 50, 1);
+    font-size: 18px;
+}
+
+.section-5 p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-5 h3 {
+    color: rgba(245, 190, 50, 1);
+    font-size: 24;
+}
+
+/* section 6 */
+
+.full-page .section-6 {
+    grid-area: section-6;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75% 25%;
+    grid-template-areas: 
+    'img-6'
+    'content-6'
+}
+.section-6 .img-6 {
+    grid-area: img-6;
+    background-image: url(img/salmon\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.section-6 .content-6 {
+    grid-area: content-6;
+    text-align: center;
+}
+
+.content-6 .s6-p1 {
+    font-family: Great Vibes;
+    font-size: 8px;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.content-6 h1 {
+    font-size: 16px;
+    color: rgba(245, 190, 50, 1);
+}
+
+.content-6 .s6-p2 {
+    margin: 5px 90px;
+    font-family: Great Vibes;
+    font-size: 8px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* section 7 */
+
+.full-page .section-7 {
+    grid-area: section-7;
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    margin: 0 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "s2-1 s2-2 s2-4"
+    "s2-1 s2-3 s2-4"
+    ;
+}
+
+.section-7 .img-l {
+    grid-area: s2-1;
+    background-image: url(img/chef4\ 1.png);
+    background-size: cover;
+}
+.section-7 .img-m1 {
+    grid-area: s2-2;
+    background-image: url(img/chef1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.section-7 .img-m2 {
+    grid-area: s2-3;
+    background-image: url(img/chef2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-7 .content-7 {
+    grid-area: s2-4;
+}
+
+.content-7 p {
+    font-size: 11px;
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#more {
+    background-color: transparent;
+    color: rgba(245, 190, 50, 1);
+    font-size: 8px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* .section-8 */
+.full-page .section-8 {
+    grid-area: section-8;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+    background-image:linear-gradient(to bottom, transparent, rgba(30, 30, 30)), url(img/finedining3\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-8 .c8 {
+    text-align: center;
+    margin: 10px 10px 0px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-8 h2 {
+    font-size: 24px;
+    color: rgba(245, 190, 50, 1);
+    margin: 30px 30px 10px 30px;
+    text-transform: uppercase;
+}
+.section-8 p {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0px;
+}
+
+.section-8 .c8 ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    cursor: pointer;
+}
+.section-8 .c8 ul li {
+    color: rgba(245, 190, 50, 1);
+    text-decoration: underline rgba(245, 190, 50, 1);
+    font-size: 8px;
+    margin: 3px 10px;
+}
+
+.section-8 .grid-8 {
+    width: 250px;
+    height: 50px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-rows: 20px 60px 10px 15px;
+    grid-template-areas: 
+    "loca p1 call p2";
+    margin-bottom: 20px;
+}
+
+.grid-8 .s8-p1 {
+    grid-area: p2;
+}
+.grid-8 .s8-p1 {
+    grid-area: p1;
+}
+#location {
+    grid-area: loca;
+    width: 18px;
+    height: 25px;
+    background-image: url(img/Vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#call {
+    grid-area: call;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/phone-fill.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#llogo {
+    margin-left: 50px;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/logo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 250px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#reserve {
+    background-color: rgba(245, 190, 50, 1);;
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* stars */
+#star-1 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-2 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-3 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-4 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-5 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-6 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-7 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-8 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-9 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-10 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-11 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-12 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-13 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-14 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
+#star-15 {
+    width: 15px;
+    height: 15px;
+    margin: 10px 0px;
+}
